@@ -12,12 +12,14 @@ int main(int argc, char ** argv) {
     cout << "Enter the amount of people attending: ";
     cin >> numAttendees;
 
+    // if capacity not exceeded
     if(numAttendees <= roomCapacity) {
         cout << "Meeting is legal." << endl;
 
         difference = roomCapacity - numAttendees;
         cout << "There is room for " << difference << " more people." << endl;
     }
+    // if capacity exceeded
     else {
         cout << "Meeting is illegal due to fire regulations." << endl;
 
